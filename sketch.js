@@ -35,7 +35,7 @@ function draw() {
     createEdgeSprites();
     box.bounceOff(edges);
     //add condition to check if box touching surface and make it box
-    if (surface1.isTouching(box) && box.bounceOff(surfacec)) {
+    if (surface1.isTouching(box) && box.bounceOff(surface1)) {
         box.shapeColor="blue"
         music.play();
     }
